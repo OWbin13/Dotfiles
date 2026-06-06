@@ -3,3 +3,4 @@
 feh --bg-scale /home/davizyn/Backgrounds/Wallpapers/3845598.jpg &
 pkill -x sxhkd; sleep 0.3 && sxhkd -c /home/davizyn/.config/sxhkd/sxhkdrc &
 pkill -x yambar; sleep 0.3 && yambar &
+pkill -x conky; sleep 0.3 && conky -c /home/davizyn/.config/conky/guitar.conkyrc &

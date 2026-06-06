@@ -1,0 +1,61 @@
+conky.config = {
+    -- Posição
+    alignment = 'top_left',
+    gap_x = 20,
+    gap_y = 54,
+
+    -- Janela
+    own_window = true,
+    own_window_type = 'desktop',
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_argb_visual = true,
+    own_window_argb_value = 200,
+    own_window_colour = '282828',
+
+    -- Visual
+    double_buffer = true,
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+
+    -- Tamanho
+    minimum_width = 280,
+    maximum_width = 280,
+
+    -- Fontes e cores
+    use_xft = true,
+    font = 'JetBrains Mono:size=9',
+    xftalpha = 1,
+    default_color = 'ebdbb2',
+
+    -- Atualização
+    update_interval = 1,
+    cpu_avg_samples = 2,
+    no_buffers = true,
+
+    -- Misc
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    out_to_console = false,
+    out_to_stderr = false,
+};
+
+conky.text = [[
+${color d79921}${font JetBrains Mono:bold:size=10} GUITAR PRACTICE${font}${color}
+${color 504945}${hr 1}${color}
+${offset 4}${color a89984}Música atual${color}
+${offset 8}${color ebdbb2}Nirvana - Smell Like Teen Spirit${color}
+
+${offset 4}${color a89984}Técnica focada${color}
+${offset 8}${color ebdbb2}Barre chords (F e Bm)${color}
+${offset 8}${color 98971a}● ${color a89984}Metrônomo: 75 BPM${color}
+
+${offset 4}${color a89984}Meta da semana${color}
+${offset 8}${color ebdbb2}Trocar acordes sem pausar${color}
+${offset 8}${color ebdbb2}no tempo do metrônomo${color}
+
+${color 504945}${hr 1}${color}
+${offset 4}${color d65d0e}󰋄 ${color a89984}Pratique todo dia, mesmo que${color}
+${offset 8}${color a89984}por 15 minutos.${color}
+]];
