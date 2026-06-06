@@ -1,0 +1,108 @@
+gruvbox:
+  bg:      &bg      "282828ff"
+  bg1:     &bg1     "3c3836ff"
+  bg2:     &bg2     "504945ff"
+  fg:      &fg      "ebdbb2ff"
+  fg4:     &fg4     "a89984ff"
+  red:     &red     "cc241dff"
+  green:   &green   "98971aff"
+  yellow:  &yellow  "d79921ff"
+  blue:    &blue    "458588ff"
+  purple:  &purple  "b16286ff"
+  aqua:    &aqua    "689d6aff"
+  orange:  &orange  "d65d0eff"
+
+bar: 
+  height: 32
+  location: top
+  spacing: 10
+  margin: 10
+  right-margin: 15
+  left-margin: 15
+
+  font: Go Mono Nerd Font Propo:size=14
+
+  foreground: *fg
+  background: *bg
+
+  border:
+    width: 1
+    color: 101010ff
+    margin: 7
+    right-margin: 80
+    left-margin: 80
+    top-margin: 0
+  
+  left:
+    - label:
+        content:
+          string: {text: , on-click: alacritty -e fastfetch}
+    
+    - label:
+        content:
+          string: {text: bspwm, on-click: alacritty -e vim /home/davizyn/.config/bspwm/bspwmrc}
+    
+    - label:
+        content:
+          string: {text: edit, on-click: "alacritty -e vim"}
+
+  center:
+    - clock:
+        content:
+          - string: {text: "{time}"}
+
+
+  right:    
+    - cpu:
+        poll-interval: 1000
+        content:
+          map:
+            conditions:
+              id == 0:
+                - ramp:
+                    tag: cpu
+                    items:
+                      - string: {text: "󰍛 {cpu}%", foreground: 8ae234ff}
+                      - string: {text: "󰍛 {cpu}%", foreground: fce94fff}
+                      - string: {text: "󰍛 {cpu}%", foreground: ef2929ff}
+
+    - mem:
+        poll-interval: 1000
+        content:
+          - ramp:
+              tag: percent_used
+              items:
+                - string: {text: "󰘚 {percent_used}%", foreground: 8ae234ff}
+                - string: {text: "󰘚 {percent_used}%", foreground: fce94fff}
+                - string: {text: "󰘚 {percent_used}%", foreground: ef2929ff}
+
+    - network:
+        content:
+          map:
+            default: {empty: {}}
+            conditions:
+              name == enp3s0:
+                map:
+                  default: {empty: {}}
+                  conditions:
+                    state == up:
+                      string: {text: "󰖩 {ssid}", on-click: "alacritty -e nmtui"}
+
+    - pipewire:
+        content:
+          list:
+            items:
+              - map:
+                  conditions:
+                    type == "sink":
+                      map:
+                        conditions:
+                          ~muted:
+                            - ramp:
+                                tag: cubic_volume
+                                items:
+                                  - string: {text: "󰕿 {cubic_volume}%"}
+                                  - string: {text: "󰖀 {cubic_volume}%"}
+                                  - string: {text: "󰕾 {cubic_volume}%"}
+                          muted:
+                            - string: {text: 󰝟, foreground: ef2929ff} 

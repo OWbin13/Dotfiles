@@ -1,0 +1,58 @@
+# Terminal
+super + Return
+    alacritty
+
+# Program launcher
+super + r
+
+# Restart sxhkd
+super + alt + r
+    pkill -USR1 -x sxhkd
+
+#
+# Hotkeys for bspwm
+#
+
+# quit/restart bspwm
+super + ctrl + {q,r}
+    bspc {quit,wm -r}
+
+# close and kill 
+super + w
+    bspc node -{c,k}
+
+# alternate between the titled and monocle layout
+super + m
+    bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+super + y
+    bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest window
+super + g
+    bspc node -s biggest.window
+
+#
+# state/flags
+#
+
+# set the window state
+super + {t,shift + t,v,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+#
+# focus/swap
+#
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f, node -d} '{1-9,10}'
