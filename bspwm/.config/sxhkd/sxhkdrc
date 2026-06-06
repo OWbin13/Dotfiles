@@ -4,6 +4,7 @@ super + Return
 
 # Program launcher
 super + r
+    bemenu-run   --bottom   --prompt "  run "   --fn "JetBrains Mono 11"   --nb "#282828"   --nf "#ebdbb2"   --ab "#282828"   --af "#ebdbb2"   --hb "#d65d0e"   --hf "#282828"   --tb "#1d2021"   --tf "#d79921"   --fb "#282828"   --ff "#ebdbb2"   --bdr "#d65d0e" -H 20
 
 # Restart sxhkd
 super + alt + r
