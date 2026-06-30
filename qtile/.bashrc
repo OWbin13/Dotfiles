@@ -156,7 +156,6 @@ source "$OSH"/oh-my-bash.sh
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
 
-export GEMINI_API_KEY="AQ.Ab8RN6LLh4Iy-y55LojJ33JM4XBcHzhSTKgryRYhqD8KvhuSww"
 export PATH=/home/davizyn/.local/bin:$PATH
 export PATH=/home/davizyn/.local/bin:$PATH
 export PATH=/home/davizyn/.local/bin:$PATH
