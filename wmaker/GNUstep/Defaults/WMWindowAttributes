@@ -1,0 +1,6 @@
+{
+  dillo.Dillo = {
+    AlwaysUserIcon = No;
+    FullMaximize = Yes;
+  };
+}

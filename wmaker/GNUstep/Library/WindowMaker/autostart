@@ -1,0 +1,3 @@
+#!/bin/sh
+feh --bg-scale /home/davizyn/Backgrounds/Wallpapers/wallhaven-yjwd6g.png &
+pkill -x conky; sleep 0.3 && conky -c /home/davizyn/.config/conky/wmaker.conkyrc &

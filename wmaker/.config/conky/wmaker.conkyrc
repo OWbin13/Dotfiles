@@ -1,0 +1,39 @@
+conky.config = {
+    -- Alinhamento perfeito no canto inferior direito
+    alignment = 'bottom_right',
+    gap_x = 25,
+    gap_y = 25,
+
+    -- Configuração de Janela para Window Maker / X11
+    background = true,
+    own_window = true,
+    own_window_type = 'desktop',
+    own_window_transparent = true,
+    own_window_argb_visual = false,
+    own_window_argb_value = 0,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+
+    -- Renderização
+    double_buffer = true,
+    update_interval = 1.0,
+    use_xft = true,
+    font = 'Sans:size=10',
+    uppercase = true,
+
+    -- Sombras ativadas para dar destaque sobre a roupa xadrez
+    draw_shades = true,
+    default_shade_color = '#1A0806', -- Sombra num tom vinho bem escuro
+    draw_borders = false,
+    draw_graph_borders = false,
+    draw_outline = false,
+
+    -- Paleta extraída da personagem (Lain / Persona style)
+    color1 = '#F4DBA1', -- Creme iluminado da jaqueta/pele
+    color2 = '#D64531', -- Terracota vibrante
+}
+
+conky.text = [[
+${alignr}${font Sans:weight=Bold:size=48}${color1}${time %H:%M}${font}
+${voffset -8}${alignr}${font Sans:weight=Bold:size=10}${color2}${time %A}${font}
+${voffset 2}${alignr}${font Sans:weight=Bold:size=11}${color1}${time %d %B, %Y}${font}
+]]
