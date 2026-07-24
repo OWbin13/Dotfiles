@@ -3,4 +3,15 @@
     AlwaysUserIcon = No;
     FullMaximize = Yes;
   };
+  Navigator.zen = {
+    NoTitlebar = Yes;
+    NoMiniaturizeButton = Yes;
+    NoBorder = Yes;
+    AlwaysUserIcon = No;
+    NoResizebar = Yes;
+    NoCloseButton = Yes;
+  };
+  urxvt.URxvt = {
+    AlwaysUserIcon = No;
+  };
 }

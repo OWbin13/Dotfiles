@@ -1,0 +1,29 @@
+{
+  TitleJustify = center;
+  WindowTitleFont = "Sans:bold:size=10";
+  MenuTitleFont = "Sans:bold:size=10";
+  MenuTextFont = "Sans:size=10";
+  IconTitleFont = "Sans:size=8";
+  ClipTitleFont = "Sans:bold:size=9";
+
+  FTitleBack = (dgradient, "#D13E2E", "#8C2618");
+  FTitleColor = "#F3D899";
+
+  PTitleBack = (solid, "#2D1614");
+  PTitleColor = "#7A4B43";
+  UTitleBack = (solid, "#2D1614");
+  UTitleColor = "#7A4B43";
+
+  MenuTitleBack = (hgradient, "#D13E2E", "#A03023");
+  MenuTitleColor = "#F3D899";
+  MenuTextBack = (solid, "#2D1614");
+  MenuTextColor = "#F3D899";
+  MenuDisabledColor = "#50302B";
+
+  IconBack = (dgradient, "#3D1D1A", "#1F0D0C");
+  IconTextColor = "#F3D899";
+  IconTitleBack = "#1F0D0C";
+  FrameBorderColor = "#8C2618";
+  FrameFocusedBorderColor = "#F3D899";
+}
+

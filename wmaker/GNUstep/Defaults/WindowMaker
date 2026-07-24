@@ -1,10 +1,10 @@
 {
-  FrameBorderColor = "#b6b6b3";
-  FTitleColor = "#ffffff";
+  FrameBorderColor = "#8C2618";
+  FTitleColor = "#F3D899";
   DontLinkWorkspaces = NO;
-  MenuDisabledColor = "#4a5470";
+  MenuDisabledColor = "#50302B";
+  IconTitleBack = "#1F0D0C";
   MoveToWorkspace9Key = "Shift+Mod1+9";
-  IconTitleBack = "#0b0f22";
   HotCornerEdge = 2;
   PixmapPath = (
     "/home/davizyn/GNUstep/Library/WindowMaker/Pixmaps",
@@ -15,58 +15,52 @@
     "/nix/store/d7k4xhhzl93b4qggdk35i8biyfw4yr9w-windowmaker-0.96.0/share/WindowMaker/Backgrounds",
     "/nix/store/d7k4xhhzl93b4qggdk35i8biyfw4yr9w-windowmaker-0.96.0/share/pixmaps"
   );
-  FTitleBack = (igradient, black, "#0000cc", 1, grey10, "#aaaaaa", 1);
+  FTitleBack = (dgradient, "#D13E2E", "#8C2618");
+  ToggleKbdModeKey = None;
+  ClipTitleFont = "Sans:bold:size=9";
   MaximizeKey = "Mod1+F";
-  ClipTitleFont = "Verdana:bold:pixelsize=10";
+  IconTitleFont = "Sans:size=8";
   MoveToWorkspace7Key = "Shift+Mod1+7";
-  IconTitleFont = "Arial,sans serif:pixelsize=9";
-  LargeDisplayFont = "Trebuchet MS,sans serif:pixelsize=24";
+  MenuTextBack = (solid, "#2D1614");
+  LargeDisplayFont = "Helvetica:slant=0:weight=80:width=100:pixelsize=48";
+  HotCornerDelay = 250;
   CenterKey = None;
-  IconTitleColor = "#8a94b0";
+  TitleJustify = center;
+  IconTitleColor = white;
+  MenuTextColor = "#F3D899";
   MoveToWorkspace2Key = "Shift+Mod1+2";
-  MenuTitleColor = "#ffffff";
-  MenuTitleFont = "Trebuchet MS,sans serif:bold:pixelsize=12";
+  IconBack = (dgradient, "#3D1D1A", "#1F0D0C");
+  MenuTitleColor = "#F3D899";
+  AntialiasedText = YES;
+  MenuTitleFont = "Sans:bold:size=10";
   HotCorners = NO;
+  MoveToWorkspace5Key = "Shift+Mod1+5";
+  WindowTitleExtendSpace = 0;
+  NormalCursor = (builtin, left_ptr);
   MoveTo6to12Head = None;
+  WorkspaceNameDisplayPosition = bottom;
   DbClickFullScreen = NO;
   IconPosition = blv;
-  WorkspaceBack = (
-    mpixmap,
-    "/home/davizyn/Backgrounds/Wallpapers/wallhaven-yjwd6g.png",
-    "#000000"
-  );
-  HighlightTextColor = "#bac4e0";
-  EnforceIconMargin = NO;
-  ClipTitleColor = "#8a94b0";
-  MoveTo12to6Head = None;
-  HotCornerActions = (None, None, None, None);
-  FrameFocusedBorderColor = "#b6b6b3";
-  WindowTitleFont = "Trebuchet MS,sans serif:weight=200:pixelsize=12";
-  MoveToWorkspace8Key = "Shift+Mod1+8";
-  MoveToWorkspace6Key = "Shift+Mod1+6";
-  ResizebarBack = (dgradient, "#111144", grey10);
-  MoveToWorkspace10Key = "Shift+Mod1+0";
-  KbdModeLock = NO;
-  CloseRootMenuByLeftOrRightMouseClick = NO;
-  MoveToWorkspace1Key = "Shift+Mod1+1";
-  FrameSelectedBorderColor = "#ffffff";
-  ToggleKbdModeKey = None;
-  MenuTextBack = (mdgradient, "#555566", black, black, "#111133");
-  HotCornerDelay = 250;
-  TitleJustify = right;
-  MenuTextColor = "#8a94b0";
-  IconBack = (igradient, black, "#111177", 1, grey10, "#555555", 1);
-  AntialiasedText = YES;
-  MoveToWorkspace5Key = "Shift+Mod1+5";
-  WorkspaceNameDisplayPosition = bottom;
-  MenuTextFont = "Trebuchet MS,sans serif:pixelsize=12";
+  MenuTextFont = "Sans:size=10";
+  WorkspaceBack = (solid, "#505075");
+  HighlightTextColor = "#000000";
   AdvanceToNewWorkspace = YES;
-  MenuTitleBack = (igradient, black, "#0000cc", 1, grey10, "#aaaaaa", 1);
+  MenuTitleBack = (hgradient, "#D13E2E", "#A03023");
+  EnforceIconMargin = NO;
+  ClipTitleColor = white;
+  MoveTo12to6Head = None;
+  IconTextColor = "#F3D899";
+  HotCornerActions = (None, None, None, None);
   CloseKey = "Mod1+W";
-  HighlightColor = "#000000";
+  FrameFocusedBorderColor = "#F3D899";
+  HighlightColor = "#ffffff";
+  WindowTitleFont = "Sans:bold:size=10";
+  MoveToWorkspace8Key = "Shift+Mod1+8";
   MoveToWorkspace3Key = "Shift+Mod1+3";
-  CClipTitleColor = "#6a7490";
-  MenuStyle = flat;
+  CClipTitleColor = gray60;
+  MenuStyle = normal;
+  ResizebarBack = (solid, "#2D1614");
+  MoveToWorkspace6Key = "Shift+Mod1+6";
   IconPath = (
     "/home/davizyn/GNUstep/Library/Icons",
     "/home/davizyn/GNUstep/Library/WindowMaker/Pixmaps",
@@ -76,10 +70,17 @@
     "/nix/store/d7k4xhhzl93b4qggdk35i8biyfw4yr9w-windowmaker-0.96.0/share/WindowMaker/Pixmaps",
     "/nix/store/d7k4xhhzl93b4qggdk35i8biyfw4yr9w-windowmaker-0.96.0/share/pixmaps"
   );
-  PTitleBack = (igradient, black, "#0000ff", 1, grey10, "#dddddd", 1);
-  UTitleColor = "#000000";
+  MoveToWorkspace10Key = "Shift+Mod1+0";
+  KbdModeLock = NO;
+  PTitleBack = (solid, "#2D1614");
+  MenuTextExtendSpace = 0;
+  UTitleColor = "#7A4B43";
   ViKeyMenus = YES;
-  UTitleBack = (igradient, black, "#111188", 1, grey10, "#777777", 1);
-  PTitleColor = "#ffffff";
+  UTitleBack = (solid, "#2D1614");
+  PTitleColor = "#7A4B43";
+  CloseRootMenuByLeftOrRightMouseClick = NO;
+  MoveToWorkspace1Key = "Shift+Mod1+1";
+  MenuTitleExtendSpace = 0;
   MoveToWorkspace4Key = "Shift+Mod1+4";
+  FrameSelectedBorderColor = "#ffffff";
 }
