@@ -1,0 +1,4 @@
+border.width: 2
+
+window.active.border.color: #89b4fa
+window.inactive.border.color: #45475a

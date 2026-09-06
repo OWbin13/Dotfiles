@@ -1,0 +1,64 @@
+conky.config = {
+    -- Alinhamento e Posição (Lado Esquerdo para não cobrir a Lain)
+    alignment = 'top_left',
+    gap_x = 50,
+    gap_y = 60,
+    minimum_width = 320,
+    maximum_width = 320,
+
+    -- Transparência e Janela no FreeBSD
+    background = true,
+    own_window = true,
+    own_window_type = 'dock',
+    own_window_class = 'Conky',
+    own_window_title = 'conky',
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_transparent = true,
+    own_window_argb_visual = true,
+    own_window_argb_value = 0,
+
+    -- Renderização de Fontes
+    use_xft = true,
+    font = 'monospace:size=9',
+    xftalpha = 0.9,
+    override_utf8_locale = true,
+    draw_shades = false,
+    draw_outline = false,
+    draw_borders = false,
+    draw_graph_borders = false,
+
+    -- Desempenho
+    update_interval = 1.0,
+    double_buffer = true,
+
+    -- Cores Temáticas (Baseadas na Lain)
+    color1 = 'e2caa9', -- Beige/Casaco
+    color2 = '8a5d62', -- Muted Pink/Sombra
+    color3 = '4a2e35', -- Dark Rose/Divisores
+    color4 = 'ffffff'  -- White Accent
+};
+
+conky.text = [[
+${color1}${font monospace:size=18:weight=bold}${time %H:%M:%S}${font}
+${color2}${time %A, %d de %B de %Y}${color}
+
+${color3}──────────────────────────────────────────${color}
+
+${color2}[ SYSTEM // WIRED ]${color}
+${color1}OS:${color} FreeBSD ${kernel} (${exec uname -m})
+${color1}Uptime:${color} ${uptime}
+${color1}CPU:${color} ${cpu cpu0}% ${color3}${cpubar cpu0 4,120}${color}
+${color1}RAM:${color} ${memperc}% ${color3}${membar 4,120}${color}
+
+${color3}──────────────────────────────────────────${color}
+
+${color2}[ MEMORY ATTACHMENT ]${color}
+${color1}TARGET:${color} Nintendo DSi (Black / SP)
+${color1}STATUS:${color} Pending Acquisition
+${color1}PLAN:${color} SD Card + TWiLight Menu++
+
+${color3}──────────────────────────────────────────${color}
+
+${color2}PROMPT >${color} ${color1}no matter where you go,
+         everyone is always connected.${color}
+]];
