@@ -9,7 +9,9 @@ conky.config = {
     -- Transparência e Janela no FreeBSD
     background = true,
     own_window = true,
-    own_window_type = 'dock',
+    out_to_x = false,
+    out_to_wayland = true,
+    own_window_type = 'desktop', -- change to dock if for some reason have bugs
     own_window_class = 'Conky',
     own_window_title = 'conky',
     own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
