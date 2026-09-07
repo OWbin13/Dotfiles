@@ -20,6 +20,10 @@
     <action name="Execute" command="bemenu-run -b" />
   </keybind>
 
+  <keybind key="W-Return">
+    <action name="Execute" command="footclient" />
+  </keybind>
+
   <keybind key="W-1">
     <action name="GoToDesktop">
       <to>1</to>

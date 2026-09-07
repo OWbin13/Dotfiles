@@ -48,5 +48,5 @@ swayidle -w \
 
 # My autostart
 pkill -x swaybg; sleep 0.3 && swaybg -i ~/.git/MyBackgrounds/Wallpapers/48578_serial_experiments_lain.jpg &
-pkill -x sndiod; sleep 0.3 && sndiod &
-pkill -x conky; sleep 0.3 && conky -c /home/Davizyn/.config/conky/dsi.conkyrc &
+pkill -x conky; sleep 0.3 && conky -c /home/davizyn/.config/conky/dsi.conkyrc &
+pkill -x foot; sleep 0.3 && foot --server &
