@@ -16,5 +16,7 @@ mpv-yt() {
     mpv "ytdl://ytsearch10:$*"
 }
 
+export ALSOFT_DRIVERS=jack
+
 #Autostart
 nerdfetch
